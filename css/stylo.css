@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 /*INDEX*/
 .grilla {
     display: grid;
@@ -16,21 +17,26 @@
         "main main main"
         "footer footer footer";
 }
+
 .main {
     grid-area: main;
     background-color: gray;
 }
+
 .footer {
     grid-area: footer;
     background-color: gray;
 }
+
 .header {
     grid-area: header;
     background-color: gray;
 }
+
 .body {
     display: flex;
 }
+
 /*Main*/
 .main {
     background-image: url(../imagenes/fondoindex.png);
@@ -42,6 +48,7 @@
     width: 100%;
     height: 100%;
 }
+
 .card {
     width: 350px;
     height: 400px;
@@ -49,16 +56,20 @@
     margin: 10px;
     border-radius: 15px;
     padding-top: 0px;
+    transform: skewY(5deg);
 }
+
 .fotos {
     background-image: url(../imagenes/pruebabg4.jfif);
     background-size: cover;
     position: relative;
 }
+
 .fotosdos {
     background-image: url(../imagenes/pruebabg3.jpg);
     position: relative;
 }
+
 /*Footer*/
 .footer {
     align-items: center;
@@ -73,6 +84,7 @@
     height: 100px;
     min-width: 728px;
 }
+
 /*Header*/
 .logo {
     display: flex;
@@ -80,9 +92,11 @@
     justify-content: center;
     align-items: center;
 }
+
 .logo h1 {
     margin: 5px;
 }
+
 .header {
     display: flex;
     flex-direction: row;
@@ -95,6 +109,7 @@
     padding-bottom: 15px;
     background-image: linear-gradient(to bottom, #283747, dodgerblue);
 }
+
 .lista {
     display: flex;
     flex-direction: row;
@@ -103,10 +118,12 @@
     list-style: none;
     padding-top: 10px;
 }
+
 .lista li {
     margin: 10px;
     color: grey;
 }
+
 .lista li a {
     text-decoration: none;
     color: white;
@@ -119,23 +136,35 @@
     box-shadow: 0 2px 0 white;
     padding-top: 15px;
 }
+
 .lista :hover {
     transform: translateY(2px);
     box-shadow: 2px 0 white;
     transform: scale(1.2);
-    transition: all;
+    transition: 1s;
+    background-color: gray;
 }
+
 .asaid {
     margin-top: 0px;
     margin-left: 15px;
     display: flex;
 }
+
 /*CONTACTO*/
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 body {
     background-image: url(../imagenes/fondoindex.png);
 }
+
+.formulario {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    -khtml-opacity: 0.8;
+}
+
 .contact_form {
     width: 460px;
     height: auto;
@@ -146,6 +175,7 @@ body {
     background-color: #fbfbfb;
     padding-left: 30px;
 }
+
 input {
     background-color: #fbfbfb;
     width: 408px;
@@ -158,6 +188,7 @@ input {
     padding-left: 10px;
     margin-bottom: 20px;
 }
+
 textarea {
     background-color: #fbfbfb;
     width: 405px;
@@ -171,10 +202,12 @@ textarea {
     margin-bottom: 20px;
     padding-top: 15px;
 }
+
 label {
     display: block;
     float: center;
 }
+
 button {
     height: 45px;
     padding-left: 5px;
@@ -189,45 +222,55 @@ button {
     width: 420px;
     cursor: pointer;
 }
+
 button p {
     color: #fff;
 }
+
 span {
     color: grey;
 }
+
 .aviso {
     font-size: 13px;
     color: #0e0e0e;
 }
+
 h1 {
     font-size: 39px;
     text-align: letf;
     padding-bottom: 20px;
     color: dodgerblue;
 }
+
 h3 {
     font-size: 16px;
     padding-bottom: 30px;
     color: #0e0e0e;
 }
+
 p {
     font-size: 14px;
     color: #0e0e0e;
 }
+
 .formulario input:focus {
     outline: 0;
     border: 1px solid #97d848;
 }
+
 .formulario textarea:focus {
     outline: 0;
     border: 1px solid #97d848;
 }
+
 /*Matriceria*/
 .maindos {
     background-image: url(../imagenes/fondoindex.png);
     display: block;
     margin-top: -40px;
 }
+
 .secmatri {
     border: dodgerblue 4px solid;
     background-color: #283747;
@@ -243,18 +286,21 @@ p {
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .secma div {
     background-color: dodgerblue;
     border: solid 2px black;
     font-size: 20px;
     padding: 5px;
 }
+
 .secma {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 350px;
     justify-content: space-around;
 }
+
 .foto {
     background-image: url(../imagenes/matric1.jpg);
 }
@@ -262,6 +308,7 @@ p {
 .fotodos {
     background-image: url(../imagenes/matric2.jfif);
 }
+
 .secejemplo {
     list-style: none;
     align-items: center;
@@ -278,24 +325,32 @@ p {
     transform: translateY(2px);
     box-shadow: 0 2px 0 white;
 }
+
 /*Medioambiente*/
-.grillamedioambiente {  
+.grillamedioambiente {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "header"
-      "menuambiente"
-      "footer";
-  }
-  .header { grid-area: header; 
+        "header"
+        "menuambiente"
+        "footer";
 }
-  .menuambiente { grid-area: menuambiente; 
+
+.header {
+    grid-area: header;
 }
-  .footer { grid-area: footer; 
+
+.menuambiente {
+    grid-area: menuambiente;
 }
+
+.footer {
+    grid-area: footer;
+}
+
 .columna div {
     background-color: #283747;
     padding: 5px;
@@ -303,20 +358,23 @@ p {
     border: gray 10px solid;
     background-image: url(../imagenes/mediambiente1.jfif);
 }
+
 .columna {
     display: grid;
     grid-template-rows: 146px 150px 146px;
     width: 150px;
     margin-bottom: 129px;
 }
+
 .medio div {
     padding-left: 15px;
     display: flex;
     font-size: large;
     background-color: gray;
 }
+
 /*Sistemas*/
-.grillasistema{
+.grillasistema {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr 1.3fr;
     grid-template-rows: 0fr 1.2fr 1.1fr 0.5fr;
@@ -328,21 +386,26 @@ p {
         "content content content"
         "footer footer footer";
 }
+
 .header {
     grid-area: header;
 }
+
 .footer {
     grid-area: footer;
 }
+
 .content {
     grid-area: content;
 }
+
 .content {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
 }
+
 .contenedor {
     width: 350px;
     height: 400px;
@@ -351,6 +414,7 @@ p {
     border-radius: 15px;
     display: flex;
 }
+
 .sis {
     list-style: none;
     align-items: center;
@@ -362,23 +426,26 @@ p {
     border: none;
     border-radius: 10px;
     box-shadow: 0 2px 0 gray;
-    background-color: dodgerblue;
+    background-image: linear-gradient(to bottom, #283747, dodgerblue);
     padding: 10px;
     transform: translateY(2px);
     box-shadow: 0 2px 0 white;
 }
+
 .sistemauno {
     background-image: url(../imagenes/neumatico.jpg);
     background-size: cover;
     position: relative;
     list-style: none;
 }
+
 .sistemados {
     background-image: url(../imagenes/hidraulico.jpg);
     background-size: cover;
     position: relative;
     list-style: none;
 }
+
 /*Responsive INDEX media mobile*/
 @media (max-width: 425px) {
     .grilla {
@@ -389,15 +456,18 @@ p {
             "asaid asaid asaid"
             "footer footer footer";
     }
+
     .header {
         display: flex;
         padding: 97px;
         background-image: linear-gradient(to bottom, #283747, dodgerblue)
     }
+
     .logo {
         display: none;
         background-color: none;
     }
+
     .lista {
         flex-direction: column;
         text-decoration: none;
@@ -411,21 +481,25 @@ p {
         padding-top: 0px;
         justify-content: center;
     }
+
     .lista li {
         margin: 2px;
         border: none;
         background-color: none;
     }
+
     .lista li a {
         display: flex;
         border: none;
         background-color: none;
         flex-direction: column;
     }
+
     .main {
         flex-direction: column;
     }
-    .content{
+
+    .content {
         display: flex;
         flex-direction: column;
     }
@@ -443,7 +517,7 @@ p {
             "footer footer footer";
     }
 
-    .content{
+    .content {
         display: flex;
         flex-direction: column;
     }
@@ -485,14 +559,16 @@ p {
         background-color: none;
         flex-direction: column;
     }
-    .bodycontac{
+
+    .bodycontac {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         flex-wrap: wrap;
 
     }
-    .bodymatriceria{
+
+    .bodymatriceria {
         display: flex;
         flex-direction: column;
         align-items: stretch;
