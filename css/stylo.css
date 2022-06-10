@@ -137,6 +137,9 @@
 body {
     background-image: url(../imagenes/fondoindex.png);
 }
+.formulario{
+    background-color: transparent;
+}
 .contact_form {
     width: 460px;
     height: auto;
@@ -145,6 +148,7 @@ body {
     padding-top: 30px;
     padding-bottom: 0px;
     background-color: #fbfbfb;
+    opacity: 0.8;
     padding-left: 30px;
 }
 input {
