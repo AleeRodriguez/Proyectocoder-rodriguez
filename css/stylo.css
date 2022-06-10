@@ -27,7 +27,7 @@
 }
 .header {
     grid-area: header;
-    background-color: dodgerblue;
+    background-color: gray;
 }
 .body {
     display: flex;
