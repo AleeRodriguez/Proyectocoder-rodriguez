@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+/*Es, nada mas*/
 /*INDEX*/
 .grilla {
     display: grid;
@@ -173,6 +174,7 @@ body {
     padding-top: 30px;
     padding-bottom: 0px;
     background-color: #fbfbfb;
+    opacity: 0.8;
     padding-left: 30px;
 }
 
